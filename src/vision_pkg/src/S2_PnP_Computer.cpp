@@ -93,9 +93,15 @@ void solveArmorPnP(const cv::Rect& armor_rect, float RL_armor_width, float RL_ar
     rclcpp::Subscription<std_msgs::msg::Float32MultiArray>::SharedPtr subscription_;
    };
 
+//卡尔曼滤波器
+
+
+
+
 int main(int argc, char** argv) {
     rclcpp::init(argc,argv);
     rclcpp::spin(std::make_shared<S2PnPNode>());
     rclcpp::shutdown();
     return 0;
 }
+

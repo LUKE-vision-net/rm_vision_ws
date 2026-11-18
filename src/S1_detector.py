@@ -52,7 +52,7 @@ class S1Detector(Node):
 
 
 
-            if abs (bar1['cy']-bar2['cy'])>200:
+            if abs (bar1['cy']-bar2['cy'])>bar1['h']*0.5:
                 continue
 
         
